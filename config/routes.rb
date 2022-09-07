@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   #get 'main/home'
-  get 'main/about'
-  get 'main/contact'
   root 'main#home'
+  get '/home', to: 'main#home'
+  get '/about', to: 'main#about'
+  get '/contact', to: 'main#contact'
+  get 
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
